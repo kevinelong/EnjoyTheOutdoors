@@ -27,6 +27,7 @@ nav a{
     min-height: 80px;
     display: inline-flex;
     box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.5);
+    overflow: hidden;
 }
 .card img{
     width: 100%;
@@ -46,4 +47,19 @@ nav a{
     border: none;
     border-radius: 12px;
     box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}
+.card-description{
+    max-height: 0px;
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    /* display: none; */
+}
+.card:hover .card-description{
+    max-height: 1000px;
+    height: 444px;
+    opacity: 1;
+    transition: 1s;
+
+    /* display: block; */
 }
